@@ -26,7 +26,7 @@ http://localhost:8000/api/products
 # normal HTTP PUT (updating data)
 To update data that we just posted, we typically use HTTP PUT. We append the product ID to the URL and have JSON containing the new information
 ```
-curl --header "Content-Type: application/json" \
+$ curl --header "Content-Type: application/json" \
 --request PUT --data '{"name":"updated", "slug":"fdsx", "description":"desc", "price":"99.99"}' \
 http://localhost:8000/api/products/1
 ```
